@@ -6,9 +6,9 @@ import {
   shouldBehaveLikeERC20,
   shouldBehaveLikeERC20Transfer,
   shouldBehaveLikeERC20Approve,
-} from "./MyToken2.behavior";
+} from "./ERCOpenZeppelin.behavior";
 
-import { MyToken2 } from "../typechain-types";
+import { OpenZeppelin } from "../typechain-types";
 
 const tokenName = "MyToken";
 const tokenSymbol = "MT";
@@ -19,7 +19,7 @@ describe("ERC20", function () {
     const accounts = await ethers.getSigners();
     const [holder, recipient] = accounts;
 
-    const token = await ethers.deployContract("MyToken2") as MyToken2;
+    const token = await ethers.deployContract("OpenZeppelin") as OpenZeppelin;
     await token.mintPublic(holder.address, initialSupply);
 
     return { accounts, holder, recipient, token };

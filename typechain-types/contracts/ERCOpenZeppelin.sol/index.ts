@@ -2,3 +2,4 @@
 /* tslint:disable */
 /* eslint-disable */
 export type { MyToken2 } from "./MyToken2";
+export type { OpenZeppelin } from "./OpenZeppelin";

@@ -3,7 +3,7 @@ pragma solidity ^0.8.28;
 
 import "solady/src/tokens/ERC20.sol";
 
-contract MyToken3Mock is ERC20{
+contract Solady is ERC20{
     string public _name;
     string public _symbol;
 

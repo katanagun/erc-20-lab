@@ -2,3 +2,4 @@
 /* tslint:disable */
 /* eslint-disable */
 export { MyToken2__factory } from "./MyToken2__factory";
+export { OpenZeppelin__factory } from "./OpenZeppelin__factory";

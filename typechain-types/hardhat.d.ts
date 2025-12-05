@@ -42,9 +42,13 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.MyToken2__factory>;
     getContractFactory(
-      name: "MyToken3",
+      name: "OpenZeppelin",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.MyToken3__factory>;
+    ): Promise<Contracts.OpenZeppelin__factory>;
+    getContractFactory(
+      name: "Solady",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.Solady__factory>;
     getContractFactory(
       name: "MyToken3Mock",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -90,10 +94,15 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.MyToken2>;
     getContractAt(
-      name: "MyToken3",
+      name: "OpenZeppelin",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
-    ): Promise<Contracts.MyToken3>;
+    ): Promise<Contracts.OpenZeppelin>;
+    getContractAt(
+      name: "Solady",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.Solady>;
     getContractAt(
       name: "MyToken3Mock",
       address: string | ethers.Addressable,
@@ -134,9 +143,13 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.MyToken2>;
     deployContract(
-      name: "MyToken3",
+      name: "OpenZeppelin",
       signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.MyToken3>;
+    ): Promise<Contracts.OpenZeppelin>;
+    deployContract(
+      name: "Solady",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.Solady>;
     deployContract(
       name: "MyToken3Mock",
       signerOrOptions?: ethers.Signer | DeployContractOptions
@@ -182,10 +195,15 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.MyToken2>;
     deployContract(
-      name: "MyToken3",
+      name: "OpenZeppelin",
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.MyToken3>;
+    ): Promise<Contracts.OpenZeppelin>;
+    deployContract(
+      name: "Solady",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.Solady>;
     deployContract(
       name: "MyToken3Mock",
       args: any[],

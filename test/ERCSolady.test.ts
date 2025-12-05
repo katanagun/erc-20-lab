@@ -6,9 +6,9 @@ import {
   shouldBehaveLikeERC20,
   shouldBehaveLikeERC20Transfer,
   shouldBehaveLikeERC20Approve,
-} from "./MyToken3Mock.behavior";
+} from "./ERCSolady.behavior";
 
-import { MyToken3Mock } from "../typechain-types";
+import { Solady } from "../typechain-types";
 
 const tokenName = "MyToken";
 const tokenSymbol = "MT";
@@ -19,7 +19,7 @@ describe("ERC20", function () {
     const accounts = await ethers.getSigners();
     const [holder, recipient] = accounts;
 
-    const token = (await ethers.deployContract("MyToken3Mock")) as MyToken3Mock;
+    const token = (await ethers.deployContract("Solady")) as Solady;
     await token.mintPublic(holder.address, initialSupply);
 
     return { accounts, holder, recipient, token };

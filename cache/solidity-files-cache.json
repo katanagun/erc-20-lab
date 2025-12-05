@@ -1,44 +1,6 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/bogdan/PycharmProjects/erc-20-lab/contracts/ERCSolady.sol": {
-      "lastModificationDate": 1764078550054,
-      "contentHash": "bcb16ca1774e9254c15c7c18712dd35d",
-      "sourceName": "contracts/ERCSolady.sol",
-      "solcConfig": {
-        "version": "0.8.28",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "solady/src/tokens/ERC20.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.28"
-      ],
-      "artifacts": [
-        "MyToken3"
-      ]
-    },
     "/Users/bogdan/PycharmProjects/erc-20-lab/node_modules/solady/src/tokens/ERC20.sol": {
       "lastModificationDate": 1763474476764,
       "contentHash": "cfcb8f86e32bb3ba406bb61907774b6a",
@@ -75,47 +37,9 @@
         "ERC20"
       ]
     },
-    "/Users/bogdan/PycharmProjects/erc-20-lab/contracts/ERCSoladyMock.sol": {
-      "lastModificationDate": 1764695133208,
-      "contentHash": "782f8543ac9b0601f60923ef5e400385",
-      "sourceName": "contracts/ERCSoladyMock.sol",
-      "solcConfig": {
-        "version": "0.8.28",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "solady/src/tokens/ERC20.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.28"
-      ],
-      "artifacts": [
-        "MyToken3Mock"
-      ]
-    },
     "/Users/bogdan/PycharmProjects/erc-20-lab/contracts/ERCOpenZeppelin.sol": {
-      "lastModificationDate": 1764694949752,
-      "contentHash": "b30315d39803e7a3aff71f1a5e1a52a2",
+      "lastModificationDate": 1764942387130,
+      "contentHash": "9e530d8f5da4682f40f93a085882dd0c",
       "sourceName": "contracts/ERCOpenZeppelin.sol",
       "solcConfig": {
         "version": "0.8.28",
@@ -148,7 +72,7 @@
         "^0.8.28"
       ],
       "artifacts": [
-        "MyToken2"
+        "OpenZeppelin"
       ]
     },
     "/Users/bogdan/PycharmProjects/erc-20-lab/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
@@ -338,6 +262,44 @@
       ],
       "artifacts": [
         "IERC20"
+      ]
+    },
+    "/Users/bogdan/PycharmProjects/erc-20-lab/contracts/ERCSolady.sol": {
+      "lastModificationDate": 1764942321746,
+      "contentHash": "fdf33f94065f8eb0defd1fb0adb8b43f",
+      "sourceName": "contracts/ERCSolady.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "solady/src/tokens/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "Solady"
       ]
     }
   }
