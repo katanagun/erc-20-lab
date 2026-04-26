@@ -4,3 +4,4 @@
 export * as openzeppelin from "./@openzeppelin";
 export * as contracts from "./contracts";
 export * as solady from "./solady";
+export * as solmate from "./solmate";

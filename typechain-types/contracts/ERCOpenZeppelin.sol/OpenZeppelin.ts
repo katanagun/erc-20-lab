@@ -26,8 +26,6 @@ import type {
 export interface OpenZeppelinInterface extends Interface {
   getFunction(
     nameOrSignature:
-      | "_name"
-      | "_symbol"
       | "allowance"
       | "approve"
       | "balanceOf"
@@ -43,8 +41,6 @@ export interface OpenZeppelinInterface extends Interface {
 
   getEvent(nameOrSignatureOrTopic: "Approval" | "Transfer"): EventFragment;
 
-  encodeFunctionData(functionFragment: "_name", values?: undefined): string;
-  encodeFunctionData(functionFragment: "_symbol", values?: undefined): string;
   encodeFunctionData(
     functionFragment: "allowance",
     values: [AddressLike, AddressLike]
@@ -81,8 +77,6 @@ export interface OpenZeppelinInterface extends Interface {
     values: [AddressLike, AddressLike, BigNumberish]
   ): string;
 
-  decodeFunctionResult(functionFragment: "_name", data: BytesLike): Result;
-  decodeFunctionResult(functionFragment: "_symbol", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "allowance", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "approve", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "balanceOf", data: BytesLike): Result;
@@ -181,10 +175,6 @@ export interface OpenZeppelin extends BaseContract {
     event?: TCEvent
   ): Promise<this>;
 
-  _name: TypedContractMethod<[], [string], "view">;
-
-  _symbol: TypedContractMethod<[], [string], "view">;
-
   allowance: TypedContractMethod<
     [owner: AddressLike, spender: AddressLike],
     [bigint],
@@ -235,12 +225,6 @@ export interface OpenZeppelin extends BaseContract {
     key: string | FunctionFragment
   ): T;
 
-  getFunction(
-    nameOrSignature: "_name"
-  ): TypedContractMethod<[], [string], "view">;
-  getFunction(
-    nameOrSignature: "_symbol"
-  ): TypedContractMethod<[], [string], "view">;
   getFunction(
     nameOrSignature: "allowance"
   ): TypedContractMethod<

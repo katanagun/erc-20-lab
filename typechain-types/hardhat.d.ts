@@ -38,9 +38,9 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IERC20__factory>;
     getContractFactory(
-      name: "MyToken2",
+      name: "ERC20",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.MyToken2__factory>;
+    ): Promise<Contracts.ERC20__factory>;
     getContractFactory(
       name: "OpenZeppelin",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -50,9 +50,21 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Solady__factory>;
     getContractFactory(
-      name: "MyToken3Mock",
+      name: "Solmate",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.MyToken3Mock__factory>;
+    ): Promise<Contracts.Solmate__factory>;
+    getContractFactory(
+      name: "IERC20",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IERC20__factory>;
+    getContractFactory(
+      name: "Maple",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.Maple__factory>;
+    getContractFactory(
+      name: "ERC20",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.ERC20__factory>;
     getContractFactory(
       name: "ERC20",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -89,10 +101,10 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.IERC20>;
     getContractAt(
-      name: "MyToken2",
+      name: "ERC20",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
-    ): Promise<Contracts.MyToken2>;
+    ): Promise<Contracts.ERC20>;
     getContractAt(
       name: "OpenZeppelin",
       address: string | ethers.Addressable,
@@ -104,10 +116,25 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.Solady>;
     getContractAt(
-      name: "MyToken3Mock",
+      name: "Solmate",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
-    ): Promise<Contracts.MyToken3Mock>;
+    ): Promise<Contracts.Solmate>;
+    getContractAt(
+      name: "IERC20",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IERC20>;
+    getContractAt(
+      name: "Maple",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.Maple>;
+    getContractAt(
+      name: "ERC20",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.ERC20>;
     getContractAt(
       name: "ERC20",
       address: string | ethers.Addressable,
@@ -139,9 +166,9 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.IERC20>;
     deployContract(
-      name: "MyToken2",
+      name: "ERC20",
       signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.MyToken2>;
+    ): Promise<Contracts.ERC20>;
     deployContract(
       name: "OpenZeppelin",
       signerOrOptions?: ethers.Signer | DeployContractOptions
@@ -151,9 +178,21 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.Solady>;
     deployContract(
-      name: "MyToken3Mock",
+      name: "Solmate",
       signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.MyToken3Mock>;
+    ): Promise<Contracts.Solmate>;
+    deployContract(
+      name: "IERC20",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IERC20>;
+    deployContract(
+      name: "Maple",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.Maple>;
+    deployContract(
+      name: "ERC20",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.ERC20>;
     deployContract(
       name: "ERC20",
       signerOrOptions?: ethers.Signer | DeployContractOptions
@@ -190,10 +229,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.IERC20>;
     deployContract(
-      name: "MyToken2",
+      name: "ERC20",
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.MyToken2>;
+    ): Promise<Contracts.ERC20>;
     deployContract(
       name: "OpenZeppelin",
       args: any[],
@@ -205,10 +244,25 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.Solady>;
     deployContract(
-      name: "MyToken3Mock",
+      name: "Solmate",
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.MyToken3Mock>;
+    ): Promise<Contracts.Solmate>;
+    deployContract(
+      name: "IERC20",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IERC20>;
+    deployContract(
+      name: "Maple",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.Maple>;
+    deployContract(
+      name: "ERC20",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.ERC20>;
     deployContract(
       name: "ERC20",
       args: any[],
