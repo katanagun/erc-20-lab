@@ -21,7 +21,7 @@ describe("Universal ERC20 Tests", function () {
     }
 
     const TOKENS = [
-        { Token: "Solady", args: ["MyToken", "MT"] },
+        { Token: "Solady", args: [] },
         { Token: "OpenZeppelin", args: ["MyToken", "MT"] },
         { Token: "Solmate", args: ["MyToken", "MT", 18] },
         { Token: "Maple", args: ["MyToken", "MT", 18] }
