@@ -1,37 +1,32 @@
-// SPDX-License-Identifier: MIT
+// // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
 import "solady/src/tokens/ERC20.sol";
 
-contract Solady is ERC20{
-     //keccak256("MyToken")
-    bytes32 internal constant _NAME_HASH =
-        0x245c734e6d4ec044daf7beffa09d54d4bafba490113c199734d790b04a7390e5;
+contract Solady is ERC20 {
+    string internal _name;
+    string internal _symbol;
 
-    // keccak256("1")
-    bytes32 internal constant _VERSION_HASH =
-        0xc89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc6;
-
-    function name() public pure override returns (string memory) {
-        return "MyToken";
+    constructor(string memory name_, string memory symbol_) {
+        _name = name_;
+        _symbol = symbol_;
     }
 
-    function symbol() public pure override returns (string memory) {
-        return "MT";
+    /// @dev Solady требует переопределить name() и symbol().
+    function name() public view override returns (string memory) {
+        return _name;
     }
 
-    function _constantNameHash() internal pure override returns (bytes32) {
-        return _NAME_HASH;
+    function symbol() public view override returns (string memory) {
+        return _symbol;
     }
 
-    function _versionHash() internal pure override returns (bytes32) {
-        return _VERSION_HASH;
-    }
-
-      function mintPublic(address to, uint256 amount) external {
+    /// @dev Публичный минт — аналог mintPublic в OZ.
+    function mintPublic(address to, uint256 amount) external {
         _mint(to, amount);
     }
 
+    /// @dev Публичный бёрн — аналог burnPublic в OZ.
     function burnPublic(address from, uint256 amount) external {
         _burn(from, amount);
     }
