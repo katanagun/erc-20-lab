@@ -14,7 +14,7 @@ describe("Gas Benchmark — Single Implementation", function () {
         [owner, user1, user2] = await ethers.getSigners();
 
         const Factory = await ethers.getContractFactory("Solady");
-        token = await Factory.deploy("MyToken", "MT");
+        token = await Factory.deploy();
         await token.mintPublic(owner.address, initialSupply);
     });
 

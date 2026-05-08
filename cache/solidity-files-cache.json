@@ -8,11 +8,11 @@
       "solcConfig": {
         "version": "0.8.28",
         "settings": {
-          "evmVersion": "paris",
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 10000
           },
+          "evmVersion": "shanghai",
           "outputSelection": {
             "*": {
               "*": [
@@ -46,11 +46,11 @@
       "solcConfig": {
         "version": "0.8.28",
         "settings": {
-          "evmVersion": "paris",
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 10000
           },
+          "evmVersion": "shanghai",
           "outputSelection": {
             "*": {
               "*": [
@@ -82,11 +82,11 @@
       "solcConfig": {
         "version": "0.8.28",
         "settings": {
-          "evmVersion": "paris",
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 10000
           },
+          "evmVersion": "shanghai",
           "outputSelection": {
             "*": {
               "*": [
@@ -120,11 +120,11 @@
       "solcConfig": {
         "version": "0.8.28",
         "settings": {
-          "evmVersion": "paris",
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 10000
           },
+          "evmVersion": "shanghai",
           "outputSelection": {
             "*": {
               "*": [
@@ -158,11 +158,11 @@
       "solcConfig": {
         "version": "0.8.28",
         "settings": {
-          "evmVersion": "paris",
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 10000
           },
+          "evmVersion": "shanghai",
           "outputSelection": {
             "*": {
               "*": [
@@ -199,11 +199,11 @@
       "solcConfig": {
         "version": "0.8.28",
         "settings": {
-          "evmVersion": "paris",
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 10000
           },
+          "evmVersion": "shanghai",
           "outputSelection": {
             "*": {
               "*": [
@@ -235,11 +235,11 @@
       "solcConfig": {
         "version": "0.8.28",
         "settings": {
-          "evmVersion": "paris",
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 10000
           },
+          "evmVersion": "shanghai",
           "outputSelection": {
             "*": {
               "*": [
@@ -273,11 +273,11 @@
       "solcConfig": {
         "version": "0.8.28",
         "settings": {
-          "evmVersion": "paris",
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 10000
           },
+          "evmVersion": "shanghai",
           "outputSelection": {
             "*": {
               "*": [
@@ -309,11 +309,11 @@
       "solcConfig": {
         "version": "0.8.28",
         "settings": {
-          "evmVersion": "paris",
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 10000
           },
+          "evmVersion": "shanghai",
           "outputSelection": {
             "*": {
               "*": [
@@ -341,17 +341,17 @@
       ]
     },
     "/Users/bogdan/PycharmProjects/erc-20-lab/contracts/ERCSolady.sol": {
-      "lastModificationDate": 1777575591257,
-      "contentHash": "49d1029b2a57be54592b7b946626b28c",
+      "lastModificationDate": 1777909421748,
+      "contentHash": "5d65eaf4c88f8d04d9428610dabc6f0d",
       "sourceName": "contracts/ERCSolady.sol",
       "solcConfig": {
         "version": "0.8.28",
         "settings": {
-          "evmVersion": "paris",
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 10000
           },
+          "evmVersion": "shanghai",
           "outputSelection": {
             "*": {
               "*": [
@@ -379,17 +379,17 @@
       ]
     },
     "/Users/bogdan/PycharmProjects/erc-20-lab/node_modules/solady/src/tokens/ERC20.sol": {
-      "lastModificationDate": 1777575639718,
-      "contentHash": "daf496f2e66f77aa93f7c6768b8894e2",
+      "lastModificationDate": 1777910918689,
+      "contentHash": "931e99ad966a89e70539e65c1e11c27d",
       "sourceName": "solady/src/tokens/ERC20.sol",
       "solcConfig": {
         "version": "0.8.28",
         "settings": {
-          "evmVersion": "paris",
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 10000
           },
+          "evmVersion": "shanghai",
           "outputSelection": {
             "*": {
               "*": [
@@ -421,11 +421,11 @@
       "solcConfig": {
         "version": "0.8.28",
         "settings": {
-          "evmVersion": "paris",
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 10000
           },
+          "evmVersion": "shanghai",
           "outputSelection": {
             "*": {
               "*": [
@@ -459,11 +459,11 @@
       "solcConfig": {
         "version": "0.8.28",
         "settings": {
-          "evmVersion": "paris",
           "optimizer": {
-            "enabled": false,
-            "runs": 200
+            "enabled": true,
+            "runs": 10000
           },
+          "evmVersion": "shanghai",
           "outputSelection": {
             "*": {
               "*": [

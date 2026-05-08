@@ -1,12 +1,17 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
-import "@nomiclabs/hardhat-vyper";
 
 const config: HardhatUserConfig = {
-  solidity: "0.8.28",
-  vyper: {
-      version: "0.2.4"
+  solidity: {
+    version: "0.8.28",
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 10000
       },
+      evmVersion: "shanghai"
+    }
+  },
   gasReporter: {
     enabled: true,
     currency: "USD",
