@@ -341,8 +341,8 @@
       ]
     },
     "/Users/bogdan/PycharmProjects/erc-20-lab/contracts/ERCSolady.sol": {
-      "lastModificationDate": 1778671300326,
-      "contentHash": "1b142bdb00a93a4a576a78c6b256f3ad",
+      "lastModificationDate": 1778775413552,
+      "contentHash": "df4f12523ccf9daa82f55c465bc8cc51",
       "sourceName": "contracts/ERCSolady.sol",
       "solcConfig": {
         "version": "0.8.28",
@@ -379,8 +379,8 @@
       ]
     },
     "/Users/bogdan/PycharmProjects/erc-20-lab/node_modules/solady/src/tokens/ERC20.sol": {
-      "lastModificationDate": 1778673215312,
-      "contentHash": "f41fcdaab7be128c6c44b39f24fd3625",
+      "lastModificationDate": 1778775443636,
+      "contentHash": "daf496f2e66f77aa93f7c6768b8894e2",
       "sourceName": "solady/src/tokens/ERC20.sol",
       "solcConfig": {
         "version": "0.8.28",

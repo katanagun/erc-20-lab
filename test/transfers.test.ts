@@ -1,11 +1,11 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("Gas Benchmark — Single Implementation", function () {
+describe("Gas Benchmark", function () {
     this.timeout(0);
 
     const initialSupply = ethers.parseEther("1000");
-    const OPS = 100_000;
+    const OPS = 1_000_000;
 
     let owner, user1, user2;
     let token;
@@ -34,8 +34,8 @@ describe("Gas Benchmark — Single Implementation", function () {
     // ------------------------------------------------------------
     // transfer — 100% normal
     // ------------------------------------------------------------
-    describe("Scenario A — transfer: 100% normal", function () {
-        it("runs 100k transfers and reports gas + USD", async function () {
+    describe("transfer", function () {
+        it("runs 1 million transfers and reports gas + USD", async function () {
             let gasTotal = 0n;
 
             for (let i = 0; i < OPS; i++) {
@@ -44,15 +44,15 @@ describe("Gas Benchmark — Single Implementation", function () {
                 gasTotal += receipt.gasUsed;
             }
 
-            printCost("transfer (100% normal)", gasTotal);
+            printCost("transfer", gasTotal);
         });
     });
 
     // ------------------------------------------------------------
     // transferFrom — 100% normal
     // ------------------------------------------------------------
-    describe("Scenario A — transferFrom: 100% normal", function () {
-        it("runs 100k transferFrom operations + USD", async function () {
+    describe("transferFrom: 100% normal", function () {
+        it("runs 1 million transferFrom operations + USD", async function () {
             await token.approve(user1.address, ethers.MaxUint256);
 
             let gasTotal = 0n;
@@ -70,8 +70,8 @@ describe("Gas Benchmark — Single Implementation", function () {
     // ------------------------------------------------------------
     // transferFrom — 99% normal / 1% special
     // ------------------------------------------------------------
-    describe("Scenario B — transferFrom: 99% normal / 1% special", function () {
-        it("runs 100k transferFrom operations with 1% special cases + USD", async function () {
+    describe("transferFrom: 99% normal / 1% special", function () {
+        it("runs 1 million transferFrom operations with 1% special cases + USD", async function () {
             await token.approve(user1.address, ethers.MaxUint256);
 
             const specialOps = Math.floor(OPS / 100);
@@ -98,8 +98,8 @@ describe("Gas Benchmark — Single Implementation", function () {
     // ------------------------------------------------------------
     // mintPublic — 100% normal
     // ------------------------------------------------------------
-    describe("Scenario A — mintPublic: 100% normal", function () {
-        it("runs 100k mintPublic operations + USD", async function () {
+    describe("mintPublic", function () {
+        it("runs 1 million mintPublic operations + USD", async function () {
             let gasTotal = 0n;
 
             for (let i = 0; i < OPS; i++) {
@@ -108,15 +108,15 @@ describe("Gas Benchmark — Single Implementation", function () {
                 gasTotal += receipt.gasUsed;
             }
 
-            printCost("mintPublic (100% normal)", gasTotal);
+            printCost("mintPublic", gasTotal);
         });
     });
 
     // ------------------------------------------------------------
     // burnPublic — 100% normal
     // ------------------------------------------------------------
-    describe("Scenario A — burnPublic: 100% normal", function () {
-        it("runs 100k burnPublic operations + USD", async function () {
+    describe("burnPublic", function () {
+        it("runs 1 million burnPublic operations + USD", async function () {
             // mint tokens to burn
             await token.mintPublic(owner.address, OPS);
 
@@ -128,15 +128,15 @@ describe("Gas Benchmark — Single Implementation", function () {
                 gasTotal += receipt.gasUsed;
             }
 
-            printCost("burnPublic (100% normal)", gasTotal);
+            printCost("burnPublic", gasTotal);
         });
     });
 
     // ------------------------------------------------------------
     // approve — 100% normal
     // ------------------------------------------------------------
-    describe("Scenario A — approve: 100% normal", function () {
-        it("runs 100k approve operations + USD", async function () {
+    describe("approve", function () {
+        it("runs 1 million approve operations + USD", async function () {
             let gasTotal = 0n;
 
             for (let i = 0; i < OPS; i++) {
@@ -145,7 +145,7 @@ describe("Gas Benchmark — Single Implementation", function () {
                 gasTotal += receipt.gasUsed;
             }
 
-            printCost("approve (100% normal)", gasTotal);
+            printCost("approve", gasTotal);
         });
     });
 });
